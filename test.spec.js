@@ -17,12 +17,12 @@ describe('order-stack', function(){
 
     });
 
-    it('should push any kind of data in stack', function(){
+    /* it('should push any kind of data in stack', function(){
         const h = new Stack;
         h.push(1);
         assert.strictEqual(h.peek,1, 'could not insert needed element');
 
-    });
+    });*/
 
     it('should check if empty no matter waht kind of element was inserted in stack', function(){
         const s = new Stack;
