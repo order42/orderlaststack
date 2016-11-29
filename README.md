@@ -10,3 +10,6 @@ npm install
 #API
 '''javascript
 const Stack = require('orderlaststack');
+
+#Travis CI
+https://travis-ci.org/order42/orderlaststack.svg?branch=master
