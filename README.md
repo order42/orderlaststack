@@ -12,4 +12,5 @@ npm install
 const Stack = require('orderlaststack');
 
 #Travis CI
-https://travis-ci.org/order42/orderlaststack.svg?branch=master
+[![Build Status](https://travis-ci.org/order42/orderlaststack.svg?branch=master)]
+(https://travis-ci.org/order42/orderlaststack)
