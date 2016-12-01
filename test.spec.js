@@ -19,8 +19,8 @@ describe('order-stack', function(){
 
     it('should push any kind of data in stack', function(){
         const h = new Stack;
-        h.push(1);
-        assert.strictEqual(h.peek[0],1, 'could not insert needed element');
+        h.push(NaN);
+        assert.strictEqual(h.peek[0],NaN, 'could not insert needed element');
 
     });
 
@@ -48,6 +48,15 @@ describe('order-stack', function(){
     
     );
     
+    it('should only show last element, but do not delete/modify it', function(){
+        const q = new Stack;
+        const w = new Stack;
+        q.push(1);
+        w.peek();
+        assert.strictEqual(w.peek(), 1, 'element was modified/deleted maybe');  
+    }
+    
+    );
 });
 
    
