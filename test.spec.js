@@ -38,9 +38,8 @@ describe('order-stack', function(){
     });
 
     it('should peek only the last element', function(){
-        const v = new Stack;
         const j = new Stack;
-        v.push(1);
+        j.push(1);
         j.push(2);
         j.push(3); 
         assert.strictEqual(j.peek(), 3, 'not a peek');  
@@ -50,10 +49,9 @@ describe('order-stack', function(){
     
     it('should only show last element, but do not delete/modify it', function(){
         const q = new Stack;
-        const w = new Stack;
         q.push(1);
-        w.peek();
-        assert.strictEqual(w.peek(), 1, 'element was modified/deleted maybe');  
+        q.peek();
+        assert.strictEqual(q.peek(), 1, 'element was modified/deleted maybe');  
     }
     
     );
