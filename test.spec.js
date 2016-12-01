@@ -17,12 +17,12 @@ describe('order-stack', function(){
 
     });
 
-    /* it('should push any kind of data in stack', function(){
+    it('should push any kind of data in stack', function(){
         const h = new Stack;
         h.push(1);
-        assert.strictEqual(h.peek,1, 'could not insert needed element');
+        assert.strictEqual(h.peek[0],1, 'could not insert needed element');
 
-    });*/
+    });
 
     it('should check if empty no matter waht kind of element was inserted in stack', function(){
         const s = new Stack;
@@ -32,9 +32,9 @@ describe('order-stack', function(){
     
     it('should pull last element from stack', function(){
         const b = new Stack;
-        b.push(2);
-        assert.strictEqual(b.pop(),2,'no pop');
-        
+        b.push(4);
+        assert.strictEqual(b.peek(),4,'not last element');
+
     });
 
     it('should peek only the last element', function(){
@@ -47,7 +47,8 @@ describe('order-stack', function(){
     }
     
     );
+    
 });
-   
 
+   
 
