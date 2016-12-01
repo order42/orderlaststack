@@ -19,8 +19,9 @@ describe('order-stack', function(){
 
     it('should push any kind of data in stack', function(){
         const h = new Stack;
-        h.push(NaN);
-        assert.strictEqual(h.peek[0],NaN, 'could not insert needed element');
+        h.push(9);
+        h.push(null);
+        assert.strictEqual(h.peek(),null, 'can not push');
 
     });
 
