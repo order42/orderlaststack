@@ -56,6 +56,17 @@ describe('order-stack', function(){
     }
     
     );
+
+    /*it('should work togehter', function(){
+        const k = new Stack;
+        k.isEmpty if isEmpty(true)
+        
+        { k.push(1);
+        j.push(2);
+        j.push(3); 
+        assert.strictEqual(j.peek(), 3, 'not a peek');/* проверка что все 4 метода могут рабоатть в связке*/  
+   
+        
 });
 
    
