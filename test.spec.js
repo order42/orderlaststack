@@ -80,6 +80,16 @@ describe('order-stack', function(){
 
     });
 
+    it('should pop last element from stack', function(){
+        const s = new Stack;
+        s.push(1);
+        s.push(2);
+        s.push(3); 
+        assert.strictEqual(s.pop(), 3, 'pop not working');/* проверка что pop вообще работает*/  
+    }
+    
+    );
+
     /*it('should work togehter', function(){
         const k = new Stack;
         k.isEmpty if isEmpty(true)
