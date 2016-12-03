@@ -32,10 +32,10 @@ describe('order-stack', function(){
 
     it('should push element in the end', function(){
         const o = new Stack;
-        o.push(-1);
-        o.push(-2);
-        o.push(-3);
-        assert.strictEqual(o.peek,o.length[3], 'not the end of data'); /*что вставляет элемент именно в конец*/
+        o.push(1);
+        o.push(2);
+        o.push(3);
+        assert.strictEqual(o.peek(), 3, 'not the end of data'); /*что вставляет элемент именно в конец*/
 
     });
 
@@ -100,14 +100,13 @@ describe('order-stack', function(){
     );
 
 
-    /*it('should work togehter', function(){
+    it('should work togehter', function(){
         const k = new Stack;
-        k.isEmpty if isEmpty(true)
-        
-        { k.push(1);
-        j.push(2);
-        j.push(3); 
-        assert.strictEqual(j.peek(), 3, 'not a peek');/* проверка что все 4 метода могут рабоатть в связке*/  
+        k.isEmpty();
+        k.push(1);
+        k.push(2);
+        k.pop();
+        assert.strictEqual(k.peek(), 1, 'not a peek');/* проверка что все 4 метода могут работать в связке*/  
    
         
 });
