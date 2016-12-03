@@ -25,13 +25,22 @@ describe('order-stack', function(){
 
     });
 
+    it('should push element in the end', function(){
+        const o = new Stack;
+        o.push(-1);
+        o.push(-2);
+        o.push(-3);
+        assert.strictEqual(o.peek,o.length[3], 'not the end of data'); /*что вставляет элемент именно в конец*/
+
+    });
+
     it('should check if empty no matter what kind of element was inserted in stack', function(){
         const s = new Stack;
         s.push(NaN);
         assert.strictEqual(s.isEmpty(), false, 'not empty'); /*что isEmpty правильно работает с величинами типа NaN*/
     });
     
-    it('should pull last element from stack', function(){
+    it('should show last element from stack', function(){
         const b = new Stack;
         b.push(4);
         assert.strictEqual(b.peek(),4,'not last element');/* что peek работает-показывает последний элемент*/
@@ -56,6 +65,15 @@ describe('order-stack', function(){
     }
     
     );
+
+    it('should pull last element from stack', function(){
+        const r = new Stack;
+        r.push(4);
+        r.push(-999);
+        r.push(null);
+        assert.strictEqual(r.peek(),null,'not all elements can be peeked at');/* что peek покажет последний элемент любого типа*/
+
+    });
 
     /*it('should work togehter', function(){
         const k = new Stack;
