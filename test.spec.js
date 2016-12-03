@@ -90,6 +90,16 @@ describe('order-stack', function(){
     
     );
 
+    it('should remove popped element from stack', function(){
+        const z = new Stack;
+        z.push(1);
+        z.pop(); 
+        assert.strictEqual(z.isEmpty(), true, 'pop not working');/* проверка что pop работает и элемент именно удаляется*/  
+    }
+    
+    );
+
+
     /*it('should work togehter', function(){
         const k = new Stack;
         k.isEmpty if isEmpty(true)
