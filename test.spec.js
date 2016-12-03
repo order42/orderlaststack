@@ -106,10 +106,11 @@ describe('order-stack', function(){
         k.push(1);
         k.push(2);
         k.pop();
-        assert.strictEqual(k.peek(), 1, 'not a peek');/* проверка что все 4 метода могут работать в связке*/  
+        assert.strictEqual(k.peek(), 1, 'coworking is not always a good thing');/* проверка что все 4 метода могут работать в связке*/  
    
-        
+    });
 });
+
 
    
 
