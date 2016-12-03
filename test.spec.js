@@ -17,6 +17,11 @@ describe('order-stack', function(){
 
     });
 
+    it('should add element in stack', function(){
+        const n = new Stack;
+        assert.strictEqual(n.isEmpty(), true, 'well,maybe it is just not empty'); /*что isEmpty вообще работоспособен - на пустом стеке*/
+
+    });
     it('should push any kind of data in stack', function(){
         const h = new Stack;
         h.push(9);
