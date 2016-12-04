@@ -7,26 +7,26 @@ describe('order-stack', function(){
     it('should use expected API', function(){
         assert.strictEqual(typeof Stack, 'function','this is not a stack element');
         const newelement1 = new Stack(123);
-        assert.strictEqual(typeof newelement1.push,'function','Stack is not a function');/* I have no freaking Idea what this thing really does*/
+        assert.strictEqual(typeof newelement1.push,'function','Stack is not a function');/***I have no freaking Idea what this thing really does*/
     });
    
     it('should add element in stack', function(){
         const a = new Stack;
         a.push(1);
-        assert.strictEqual(a.isEmpty(), false, 'not empty'); /*что push вообще вставляет элемент*/
+        assert.strictEqual(a.isEmpty(), false, 'not empty'); /**что push вообще вставляет элемент*/
 
     });
 
     it('should add element in stack', function(){
         const n = new Stack;
-        assert.strictEqual(n.isEmpty(), true, 'well,maybe it is just not empty'); /*что isEmpty вообще работоспособен - на пустом стеке*/
+        assert.strictEqual(n.isEmpty(), true, 'well,maybe it is just not empty'); /**что isEmpty вообще работоспособен - на пустом стеке*/
 
     });
     it('should push any kind of data in stack', function(){
         const h = new Stack;
         h.push(9);
         h.push(null);
-        assert.strictEqual(h.peek(),null, 'can not push'); /*что push вставляет элемент любого типа*/
+        assert.strictEqual(h.peek(),null, 'can not push'); /**что push вставляет элемент любого типа*/
 
     });
 
@@ -35,20 +35,20 @@ describe('order-stack', function(){
         o.push(1);
         o.push(2);
         o.push(3);
-        assert.strictEqual(o.peek(), 3, 'not the end of data'); /*что вставляет элемент именно в конец*/
+        assert.strictEqual(o.peek(), 3, 'not the end of data'); /**что вставляет элемент именно в конец*/
 
     });
 
     it('should check if empty no matter what kind of element was inserted in stack', function(){
         const s = new Stack;
         s.push(NaN);
-        assert.strictEqual(s.isEmpty(), false, 'not empty'); /*что isEmpty правильно работает с величинами типа NaN*/
+        assert.strictEqual(s.isEmpty(), false, 'not empty'); /**что isEmpty правильно работает с величинами типа NaN*/
     });
     
     it('should show last element from stack', function(){
         const b = new Stack;
         b.push(4);
-        assert.strictEqual(b.peek(),4,'not last element');/* что peek работает-показывает последний элемент*/
+        assert.strictEqual(b.peek(),4,'not last element');/** что peek работает-показывает последний элемент*/
 
     });
 
@@ -57,7 +57,7 @@ describe('order-stack', function(){
         j.push(1);
         j.push(2);
         j.push(3); 
-        assert.strictEqual(j.peek(), 3, 'not a peek');/* проверка что peek показывает именно последний элемент*/  
+        assert.strictEqual(j.peek(), 3, 'not a peek');/** проверка что peek показывает именно последний элемент*/  
     }
     
     );
@@ -66,7 +66,7 @@ describe('order-stack', function(){
         const q = new Stack;
         q.push(1);
         q.peek();
-        assert.strictEqual(q.peek(), 1, 'element was modified/deleted maybe'); /*что только показывает его, не удаляя и не модифицируя*/ 
+        assert.strictEqual(q.peek(), 1, 'element was modified/deleted maybe'); /**что только показывает его, не удаляя и не модифицируя*/ 
     }
     
     );
@@ -76,7 +76,7 @@ describe('order-stack', function(){
         r.push(4);
         r.push(-999);
         r.push(null);
-        assert.strictEqual(r.peek(),null,'not all elements can be peeked at');/* что peek покажет последний элемент любого типа*/
+        assert.strictEqual(r.peek(),null,'not all elements can be peeked at');/** что peek покажет последний элемент любого типа*/
 
     });
 
@@ -85,7 +85,7 @@ describe('order-stack', function(){
         s.push(1);
         s.push(2);
         s.push(3); 
-        assert.strictEqual(s.pop(), 3, 'pop not working');/* проверка что pop вообще работает*/  
+        assert.strictEqual(s.pop(), 3, 'pop not working');/** проверка что pop вообще работает*/  
     }
     
     );
@@ -94,7 +94,7 @@ describe('order-stack', function(){
         const z = new Stack;
         z.push(1);
         z.pop(); 
-        assert.strictEqual(z.isEmpty(), true, 'pop not working');/* проверка что pop работает и элемент именно удаляется*/  
+        assert.strictEqual(z.isEmpty(), true, 'pop not working');/** проверка что pop работает и элемент именно удаляется*/  
     }
     
     );
@@ -106,7 +106,7 @@ describe('order-stack', function(){
         k.push(1);
         k.push(2);
         k.pop();
-        assert.strictEqual(k.peek(), 1, 'coworking is not always a good thing');/* проверка что все 4 метода могут работать в связке*/  
+        assert.strictEqual(k.peek(), 1, 'coworking is not always a good thing');/** проверка что все 4 метода могут работать в связке*/  
    
     });
 });
