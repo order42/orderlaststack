@@ -89,7 +89,7 @@ describe('order-stack', function()
         n.push(1);
         n.push(2);
         n.push(3); 
-        assert.strictEqual(n.pop(), 3, 'pop not working');/** проверка что pop вообще работает*/  
+        assert.strictEqual(n.pop[3],3, 'pop not working');/** проверка что pop вообще работает*/  
     }
     
     );
