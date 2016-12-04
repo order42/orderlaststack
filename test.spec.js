@@ -3,11 +3,15 @@
 const assert = require('assert');
 const Stack = require('./index.js');
 
-describe('order-stack', function(){
+describe('order-stack', function()
+
+{
     it('should use expected API', function(){
-        assert.strictEqual(typeof Stack, 'function','this is not a stack element');
-        const newelement1 = new Stack(123);
-        assert.strictEqual(typeof newelement1.push,'function','Stack is not a function');/***I have no freaking Idea what this thing really does*/
+        const n = new Stack();
+        assert.strictEqual(typeof n.push,'function','push is not a function');/**now I have some freaking Idea what this thing really does*/
+        assert.strictEqual(typeof n.peek,'function','pop is not a function');
+        assert.strictEqual(typeof n.pop,'function','peek is not a function');
+        assert.strictEqual(typeof n.isEmpty,'function','isEmpty is not a function');
     });
    
     it('should add element in stack', function(){
@@ -17,7 +21,7 @@ describe('order-stack', function(){
 
     });
 
-    it('should add element in stack', function(){
+    it('should check if stack is empty', function(){
         const n = new Stack;
         assert.strictEqual(n.isEmpty(), true, 'well,maybe it is just not empty'); /**что isEmpty вообще работоспособен - на пустом стеке*/
 
@@ -106,7 +110,7 @@ describe('order-stack', function(){
         n.push(1);
         n.push(2);
         n.pop();
-        assert.strictEqual(n.peek(), 1, 'coworking is not always a good thing');/** проверка что все 4 метода могут работать в связке*/  
+        assert.strictEqual(n.peek(), 1, 'some of the methods just do not get along');/** проверка что все 4 метода могут работать в связке*/  
    
     });
 });
