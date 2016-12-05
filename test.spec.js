@@ -61,7 +61,7 @@ describe('order-stack', function()
         n.push(1);
         n.push(2);
         n.push(3); 
-        assert.strictEqual(n.peek(), 3, 'not a peek');/** проверка что peek показывает именно последний элемент*/  
+        assert.strictEqual(n.peek(), 3, 'if you peek at element long enough, it may peek back');/** проверка что peek показывает именно последний элемент*/  
     }
     
     );
@@ -84,16 +84,7 @@ describe('order-stack', function()
 
     });
 
-    it('should pop last element from stack', function(){
-        const n = new Stack;
-        n.push(1);
-        n.push(2);
-        n.push(3); 
-        assert.strictEqual(n.pop[3],3, 'pop not working');/** проверка что pop вообще работает*/  
-    }
     
-    );
-
     it('should remove popped element from stack', function(){
         const n = new Stack;
         n.push(1);
@@ -114,6 +105,15 @@ describe('order-stack', function()
    
     });
 });
+
+
+/** 
+ * Removes the last element from stack and return it
+ * 
+ * @function
+ * @return first element in stack
+ */
+
 
 
    
