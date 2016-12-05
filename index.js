@@ -10,12 +10,7 @@ function Stack(){
 Stack.prototype.push = function(value){
     this.data.push(value);
 };  
-/** 
- * Removes the last element from stack and return it
- * 
- * @function
- * @return first element in stack
- */
+
 Stack.prototype.pop  =  function(){
     return this.data.pop();
     
