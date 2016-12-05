@@ -1,5 +1,9 @@
 #orderlaststack
 Stack implementation in JS
+```
+#Travis CI
+[![Build Status](https://travis-ci.org/order42/orderlaststack.svg?branch=master)]
+(https://travis-ci.org/order42/orderlaststack)
 
 #How to develop
 ```bash
@@ -12,15 +16,14 @@ npm install
 const Node = require('orderlaststack');
 const Stack = new Stack;
 
-const node1 = new Node(1);
-const node2 = new Node(2);
-node1.addNext(node2);
-console.log(node1.value)// 1
-```
+Stack.push(1000);//1000
+Stack.peek();
+Stack.pop();
+Stack.isEmpty();
 
-#Travis CI
-[![Build Status](https://travis-ci.org/order42/orderlaststack.svg?branch=master)]
-(https://travis-ci.org/order42/orderlaststack)
+
+
+
 
 
 
