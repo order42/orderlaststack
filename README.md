@@ -16,7 +16,7 @@ npm install
 const Node = require('orderlaststack');
 const Stack = new Stack;
 
-Stack.push(1000);//1000
+Stack.push(1000);
 Stack.peek();
 Stack.pop();
 Stack.isEmpty();

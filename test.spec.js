@@ -34,12 +34,12 @@ describe('order-stack', function()
 
     });
 
+
     it('should push element in the end', function(){
         const n = new Stack;
         n.push(1);
-        n.push(2);
-        n.push(3);
-        assert.strictEqual(n.peek(), 3, 'not the end of data'); /**что вставляет элемент именно в конец*/
+        var j= (n[0]);
+        assert.strictEqual(j,1, 'not the end of data'); /**что вставляет элемент именно в конец - тут нужно попытаться использовать числовой индекс*/
 
     });
 
@@ -84,7 +84,7 @@ describe('order-stack', function()
 
     });
 
-    
+
     it('should remove popped element from stack', function(){
         const n = new Stack;
         n.push(1);
@@ -107,12 +107,7 @@ describe('order-stack', function()
 });
 
 
-/** 
- * Removes the last element from stack and return it
- * 
- * @function
- * @return first element in stack
- */
+
 
 
 

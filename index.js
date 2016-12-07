@@ -50,3 +50,25 @@ Stack.prototype.isEmpty = function(){
 
 module.exports = Stack;
 
+
+/** var n =[]; 
+n.push(1);
+n.push(2);
+n.push(3);
+var j = (n[2]);
+console.log(j);*/
+
+
+
+ /*const n = new Stack;
+        n.push(1);
+        n.push(2);
+        n.push(3);
+        assert.strictEqual(console.log(n[2]))*/
+
+
+        const n = new Stack;
+        n.push(1);
+        n.push(2);
+        console.log(n);
+        console.log(n[n.length - 1]);
