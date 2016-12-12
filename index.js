@@ -51,24 +51,38 @@ Stack.prototype.isEmpty = function(){
 module.exports = Stack;
 
 
-/** var n =[]; 
-n.push(1);
-n.push(2);
-n.push(3);
-var j = (n[2]);
-console.log(j);*/
 
 
 
- /*const n = new Stack;
-        n.push(1);
-        n.push(2);
-        n.push(3);
-        assert.strictEqual(console.log(n[2]))*/
 
 
-        const n = new Stack;
-        n.push(1);
-        n.push(2);
-        console.log(n);
-        console.log(n[n.length - 1]);
+
+/*var charset = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
+function crack(value){
+    function toRadix(N,radix) {
+        var HexN = "", 
+            Q = Math.floor(Math.abs(N)), 
+            R,
+            strv = charset,
+            radix = strv.length;
+        while (true) {
+            R = Q % radix;
+            HexN = strv.charAt(R) + HexN;
+            Q = (Q - R) / radix; 
+            if (Q == 0) 
+                break;
+        };
+        return ((N < 0) ? "-" + HexN : HexN);
+    };
+    var start = (new Date()) * 1,
+        cracked = false,
+        index = 0;
+    while(!cracked){
+        if(toRadix(index) == value)
+            cracked = true;
+        else
+            index++;
+    };
+    alert(((new Date()) * 1) - start);
+};
+Console.log(charset); */

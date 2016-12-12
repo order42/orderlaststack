@@ -38,7 +38,7 @@ describe('order-stack', function()
     it('should push element in the end', function(){
         const n = new Stack;
         n.push(1);
-        var j= (n[0]);
+        var j = (n[0]);
         assert.strictEqual(j,1, 'not the end of data'); /**что вставляет элемент именно в конец - тут нужно попытаться использовать числовой индекс*/
 
     });
