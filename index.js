@@ -57,6 +57,40 @@ module.exports = Stack;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** ниже-небольшая закладка чисто для меня. Не обращайте на нее внимания, она закомменчена и никак не влияет на остальной код */
 /*var charset = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
 function crack(value){
     function toRadix(N,radix) {
