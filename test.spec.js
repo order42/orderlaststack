@@ -104,7 +104,19 @@ describe('order-stack', function()
         assert.strictEqual(n.peek(), 1, 'some of the methods just do not get along');/** проверка что все 4 метода могут работать в связке*/  
    
     });
+
+    /** it('use cycle', function(){
+        const n = new Stack;
+        n.push(1);
+
+        for (let i = 0; i =100; i++)
+            var val = n.peek();
+        assert(val===1);
+        assert(n.isEmpty() == false);здесь стоит попробовать цикл, но попозже
+   
+    });*/  
 });
+
 
 
 
