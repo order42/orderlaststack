@@ -17,7 +17,7 @@ describe('order-stack', function()
     it('should add element in stack', function(){
         const n = new Stack;
         n.push(1);
-        assert.strictEqual(n.isEmpty(), false, 'not empty'); /**что push вообще вставляет элемент*/
+        assert.strictEqual(n.isEmpty(), false, 'nothing was pushed in the stack'); /**что push вообще вставляет элемент*/
 
     });
 
@@ -30,7 +30,7 @@ describe('order-stack', function()
         const n = new Stack;
         n.push(9);
         n.push(null);
-        assert.strictEqual(n.peek(),null, 'can not push'); /**что push вставляет элемент любого типа*/
+        assert.strictEqual(n.peek(),null, 'can not push this element'); /**что push вставляет элемент любого типа*/
 
     });
 
@@ -46,7 +46,7 @@ describe('order-stack', function()
     it('should check if empty no matter what kind of element was inserted in stack', function(){
         const n = new Stack;
         n.push(NaN);
-        assert.strictEqual(n.isEmpty(), false, 'not empty'); /**что isEmpty правильно работает с величинами типа NaN*/
+        assert.strictEqual(n.isEmpty(), false, 'if you add this element, emptiness check fails'); /**что isEmpty правильно работает с величинами типа NaN*/
     });
     
     it('should show last element from stack', function(){
@@ -105,18 +105,7 @@ describe('order-stack', function()
    
     });
 
-    /** it('use cycle', function(){
-        const n = new Stack;
-        n.push(1);
-
-        for (let i = 0; i =100; i++)
-            var val = n.peek();
-        assert(val===1);
-        assert(n.isEmpty() == false);здесь стоит попробовать цикл, но попозже
-   
-    });*/  
-});
-
+});   
 
 
 
