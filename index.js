@@ -3,7 +3,7 @@
 const assert = require('assert');
 
 function Stack(){
-    this.data=[];
+    this.data = [];
 
 }
 
