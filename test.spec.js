@@ -75,7 +75,7 @@ describe('order-stack', function()
     
     );
 
-    it('should pull last element from stack', function(){
+    it('should pull any last element from stack', function(){
         const n = new Stack;
         n.push(4);
         n.push(-999);
@@ -84,15 +84,20 @@ describe('order-stack', function()
 
     });
 
+it('should pull even undefined last element from stack', function(){
+    const n = new Stack;
+    n.push(undefined);
+assert.strictEqual(n.peek(),undefined,'undefined' ); /**что обработка undefined идет корректно */
+
+});
 
     it('should remove popped element from stack', function(){
         const n = new Stack;
         n.push(1);
         n.pop(); 
         assert.strictEqual(n.isEmpty(), true, 'pop not working');/** проверка что pop работает и элемент именно удаляется*/  
-    }
-    
-    );
+        
+    } );
 
 
     it('should work togehter', function(){
@@ -105,7 +110,15 @@ describe('order-stack', function()
    
     });
 
-});   
+
+/**it('should work with cycles', function(){
+    const n = new Stack 
+     var i = 0;
+      while (i<3) 
+    n.push(i);
+    i++;
+    assert.strictEqual(n.peek(),3,'cycles are not good');
+});   */
 
 
 
