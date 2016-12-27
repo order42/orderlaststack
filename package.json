@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test.spec.js",
-    "lint":  "./node_modules/.bin/eslint index.js, test.spec.js "
+    "lint":  "./node_modules/.bin/eslint index.js test.spec.js "
   },
   "author": "Vladimir Polyakov",
   "license": "MIT"
