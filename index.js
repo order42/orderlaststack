@@ -33,9 +33,11 @@ Stack.prototype.pop  =  function(){
  * @return last element in stack
  */
 Stack.prototype.peek = function(){
-    return (this.data[this.data.length - 1]); 
-     if (this.data.length<1)
-
+    
+    if (this.data.length<1)
+        return function alert()
+    {elseif
+return (this.data[this.data.length - 1]); 
 };
 
 /** 
